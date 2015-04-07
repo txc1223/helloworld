@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 类似于按钮的效果 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 实心 -->
+   <!-- <solid android:color="#AE0000" />  -->
+    <!-- <gradient
+        android:endColor="#fff"
+        android:gradientRadius="150"
+        android:startColor="#f00"
+        android:type="radial" /> -->
+    <!-- 渐变 -->
+  
+         <gradient
+        android:angle="90"
+        android:centerColor="#CE0000"
+        android:endColor="#930000"
+        android:startColor="#930000" 
+        android:gradientRadius="50"/>
+         
+    
+    
+ 		<!-- <gradient
+     			android:startColor="#f00"  
+                android:endColor="#AE0000"  
+               android:type="radial"  
+               android:gradientRadius="90"/> -->
+
+</shape>

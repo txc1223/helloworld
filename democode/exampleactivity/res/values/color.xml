@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="personal_textview">#3c3c3c</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="ccc">#ccc</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="green">#00ff00</color>
+    <color name="keywork_line">#FFFAF4</color>
+    <color name="keywork_white">#FFE4CA</color>
+    <color name="keywork_title">#E6F1F5</color>
+
+    <!-- focused控件获得焦点时的色彩 -->
+    <color name="focused">#FFFF33</color>
+    <!-- combrage_blue浅蓝 -->
+    <color name="combrage_blue">#D2E9FF</color>
+    <!-- <color name="gray">#4a464a</color> -->
+    <!-- 灰色（128,128,128） -->
+    <color name="gray">#808080</color>
+    <!-- 纯蓝（0,0,255） -->
+    <color name="blue">#0000ff</color>
+    <!-- 暗灰色 -->
+    <color name="darkgray">#a9a9a9</color>
+    <color name="f8f8f8">#f8f8f8</color>
+    <color name="white_gray">#d0d0d0</color>
+    <!-- 透明颜色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 日历视图所需要的颜色 -->
+    <color name="cal_color1">#FFEF9C</color>
+    <color name="cal_color2">#7BC7F7</color>
+    <color name="cal_color3">#63A6CE</color>
+    <color name="cal_color4">#FFC784</color>
+    <color name="cal_color5">#B3F2E3</color>
+    <color name="cal_color6">#A5BFE1</color>
+    <color name="cacheColorHint">#00000000</color>
+    <color name="cal_today_color">#edfafc</color>
+    <!-- Meeting View Color -->
+
+    <color name="background">#f5f9fb</color>
+    <color name="meeting_today">#CEFFCE</color>
+    <color name="dialog_bg">#F0F0F0</color>
+    <color name="btn_normal_begin">#fff</color>
+    <color name="btn_normal_end">#ccc</color>
+    <color name="btn_press_begin">#F9E795</color>
+    <color name="btn_press_end">#FFC784</color>
+    <!-- d0d0d0 -->
+    <!-- <color name="meeting_table_head">#ccc</color> -->
+    <color name="meeting_table_head">#e9edf6</color>
+
+    <!-- contact -->
+    <color name="lv_select_color_begin">#F9CBA5</color>
+    <color name="lv_select_color_end">#F49556</color>
+
+    <!-- 天气预报 -->
+    <color name="weather_yellow">#FFF301</color>
+    <color name="label_text_color">#808ead</color>
+    <color name="message_list_item_background">#ffffff</color>
+    <color name="message_list_item_footer_background">#eeeeee</color>
+    <color name="home_text_color">#2b497b</color>
+    <color name="color_333">#333</color>
+    <color name="press">#fbc300</color>
+    <color name="select_group_check">#808ead</color>
+    <color name="select_group_un_check">#000</color>
+    <!-- 自定义listview加载背景 -->
+    <color name="list_load_view">#669999</color>
+    <!-- listview的奇数项的颜色 -->
+    <color name="list_radix">#f7fbfc</color>
+    <!-- listview的偶数项的颜色 -->
+    <color name="list_even">#e6f1f5</color>
+
+</resources>

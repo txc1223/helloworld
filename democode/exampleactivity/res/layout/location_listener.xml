@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主控手机号" />
+
+            <EditText
+                android:id="@+id/location_phone_et"
+                android:layout_width="300px"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/location_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启监控" />
+
+            <Button
+                android:id="@+id/location_stop_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止监控" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/location_tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

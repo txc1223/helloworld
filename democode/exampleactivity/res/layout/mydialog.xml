@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+         android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="请输入用户名"/>
+<EditText 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+ <TextView 
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="请输入密码"/>
+<EditText 
+     android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:password="true"/>
+<Button 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:text="登陆"/>
+<Button 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:text="取消"/>
+</LinearLayout>

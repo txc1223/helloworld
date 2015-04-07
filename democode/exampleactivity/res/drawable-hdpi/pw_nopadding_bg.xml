@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 实心 -->
+	<!-- #EDEDED白灰色 -->
+	<solid
+		android:color="#EDEDED" />
+	<!-- 描边 -->
+	<stroke
+		android:width="1px"
+		android:color="#333" />
+	<!-- 圆角 -->
+	<corners
+		android:radius="5dp" />
+	<padding
+		android:left="1dp"
+		android:top="1dp"
+		android:right="1dp"
+		android:bottom="1dp" />
+	<!-- 色彩渐变 -->
+	<!-- 角度值为270表示从上到下渐变 -->
+	<gradient
+		android:startColor="#FAFAFA"
+		android:centerColor="#EDEDED"
+		android:endColor="#D4D4D4"
+		android:angle="270" />
+</shape>

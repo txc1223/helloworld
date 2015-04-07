@@ -1,0 +1,108 @@
+package util;
+
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class MyNode {
+	private String name;
+	private List<MyNode> myNodeList = new ArrayList<MyNode>();
+	private Node node;
+	private String nodeNameSpace;
+
+	public MyNode(Node node) {
+		super();
+		this.node = node;
+		getRealName(node.getNodeName());
+		setNodeList(node.getChildNodes());
+	}
+
+	public  String getTypeNameSpace(Node node) {
+			String typeName = node.getAttributes().getNamedItemNS("http://www.w3.org/2001/XMLSchema-instance", "type").getNodeValue();
+			String[] strs = typeName.split("\\:", 2);
+			String pre = strs.length == 1? null: strs[0];
+			return getTypeNameSpaceByPre(pre, node);
+
+	}
+	public String getTypeNameSpaceByPre(String str ,Node node){
+		Node ns;
+		if((ns = getNS(str, node))==null){
+			Node parentNode=node.getParentNode();
+			if(parentNode == null)
+				return null;
+			else
+				return getTypeNameSpaceByPre(str, parentNode);
+		}else{
+			return ns.getNodeValue();
+		}
+	}
+	
+	private Node getNS(String str, Node node){
+		if(str == null )
+			return node.getAttributes().getNamedItem("xmlns");
+		else
+			return node.getAttributes().getNamedItemNS("http://www.w3.org/2000/xmlns/", str);
+	}
+
+	public boolean equalsNameSpace(String nameSpace) {
+		return nameSpace.equals(nodeNameSpace);
+
+	}
+
+	private void getRealName(String name) {
+		nodeNameSpace = node.getNamespaceURI();
+		
+		this.name = node.getLocalName();
+
+	}
+
+	public boolean equalsName(String name) {
+		return this.name.equals(name);
+	}
+
+	public String getName() {
+		return node.getNodeName();
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setNodeList(NodeList nodeList) {
+		int len = nodeList.getLength();
+		for (int i = 0; i < len; i++) {
+			Node node = nodeList.item(i);
+			MyNode myNode = new MyNode(node);
+			myNodeList.add(myNode);
+		}
+	}
+
+	public String getTextContent() {
+		return node.getTextContent();
+	}
+
+
+	public Node getNode() {
+		return node;
+	}
+
+	public void setNode(Node node) {
+		this.node = node;
+	}
+
+	public List<MyNode> getMyNodeList() {
+		return myNodeList;
+	}
+
+	public void setMyNodeList(List<MyNode> myNodeList) {
+		this.myNodeList = myNodeList;
+	}
+
+}

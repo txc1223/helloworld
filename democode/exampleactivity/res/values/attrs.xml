@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="calItemView"><!-- 控件名称 -->
+		<attr name="text" format="string" /><!-- 属性名称，类型 -->
+		<attr name="has" format="boolean" /><!-- 属性名称，类型 -->
+	</declare-styleable>
+	
+	<declare-styleable name="CustomSelect">  
+        <attr name="pw_bg" format="reference"/>  
+    </declare-styleable> 
+</resources>
+

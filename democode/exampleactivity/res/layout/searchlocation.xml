@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+ <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经度：" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/dlong_et1"
+                android:layout_width="200px"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/searh_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询" />
+
+            <Button
+                android:id="@+id/mode_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卫星" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纬度：" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/dlat_et1"
+                android:layout_width="200px"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/zoom_in_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/zoom_out_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </TableRow>
+    </TableLayout>
+   
+
+    <com.google.android.maps.MapView
+        android:id="@+id/map_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="04tBHUdwKZq63CFle32N0TX6YMI7W-KiIzuC_Ng" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试手机的所有传感器列表"
+        android:id="@+id/senesor_btn1" />
+
+    <Button
+        android:id="@+id/senesor_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="加速度传感器" />
+
+    <Button
+        android:id="@+id/senesor_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="方向传感器" />
+
+    <Button
+        android:id="@+id/senesor_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="光线传感器" />
+
+    <Button
+        android:id="@+id/senesor_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="接近传感器" />
+
+</LinearLayout>

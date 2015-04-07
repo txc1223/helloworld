@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="读取assets文件"
+    android:id="@+id/file_access_btn_01"
+        />
+    <Button 
+         android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="读取system文件"
+    android:id="@+id/file_access_btn_02"
+        />
+    <Button 
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="写入system文件"
+    android:id="@+id/file_access_btn_03"
+        />
+    <Button 
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="读取SD卡文件"
+    android:id="@+id/file_access_btn_04"
+        />
+
+    <Button
+        android:id="@+id/file_access_btn_05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="写入SD卡文件" />
+  <Button
+        android:id="@+id/file_access_btn_06"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="写入SD卡图片" />
+     <ImageView 
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/file_access_img_01"
+        />
+
+</LinearLayout>

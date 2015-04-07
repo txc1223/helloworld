@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scustom="http://schemas.android.com/apk/res/txc.example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:orientation="vertical" >
+
+    <txc.commponent.CustomSelect
+            android:id="@+id/tvMyTitle"
+            style="@style/commom_title"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            scustom:pw_bg="@drawable/pw_nopadding_bg"
+            android:background="@drawable/pt_calendar_title_bg"
+            android:text="自定义下拉列表" 
+        ></txc.commponent.CustomSelect>
+        
+
+</LinearLayout>
