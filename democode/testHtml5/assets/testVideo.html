@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<style> 
+@font-face/*字体定义  */
+{
+font-family: myFirstFont;/*字体定义名字 下面div 引用  */
+src: url('http://www.w3school.com.cn/example/css3/Sansation_Light.ttf')
+    ,url('http://www.w3school.com.cn/example/css3/Sansation_Light.eot'); /* IE9+ */
+}
+
+div
+{/*  */
+font-family:myFirstFont;/* 引用字体 看上面@font-face font-family: myFirstFont; */
+text-align:center; /*文本位置 */
+border:10px solid transparent; /* 边框宽度和 颜色 */
+padding:10px 40px;   /*左右    上下 padding*/
+background:#dddddd;
+width:220px;
+border-radius:10px;    /* 圆角角度 */
+-moz-border-radius:25px; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #000000;/* 边框阴影 */
+
+
+/*
+transition:width 2s, height 2s;/*动画时间 */
+-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+
+*/
+}
+
+
+
+div#round:hover/*鼠标指针放到 div 元素上会转180度  长宽改变*/
+{
+width:50px;
+height:50px;
+transform:rotate(180deg);
+-moz-transform:rotate(180deg); /* Firefox 4 */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+
+
+}
+
+div#div1
+{
+width:30px;
+height:30px;
+background:red;
+position:relative;
+
+/* Rotate div */ /* 旋转角度 */
+transform:rotate(5deg);   
+-ms-transform:rotate(5deg); /* Internet Explorer */
+-moz-transform:rotate(5deg); /* Firefox */
+-webkit-transform:rotate(5deg); /* Safari 和 Chrome */
+-o-transform:rotate(5deg); /* Opera */
+
+/* 动画时间   无限  轮流*/
+animation:myfirst  2s  linear 1s  infinite  alternate;  /* Safari and Chrome  动画时间 延迟  无限   倒着也来1遍*/
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 2s  linear 1s  infinite ; /* Safari and Chrome  动画时间 延迟  无限 */
+-o-animation:myfirst 5s; /* Opera */
+}
+div#div2
+{
+transform:matrix(0.866,0.5,-0.5,0.866,10,10);/*matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。*/
+-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+-moz-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Firefox */
+-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+-o-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Opera */
+}
+
+#round
+{
+-moz-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;	/* Old Firefox */
+-webkit-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;	/* Safari and Chrome */
+-o-border-image:url(http://www.w3school.com.cn/i/border.png)30 30 round;		/* Opera */
+border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;
+}
+
+#stretch/* id  为stretch的 用这些样式*/
+{
+-moz-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Old Firefox */
+-webkit-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Safari and Chrome */
+-o-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Opera */
+border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;
+}
+
+
+body/*body的背景  */
+{
+background:url(http://www.w3school.com.cn/i/bg_flower.gif),url(http://www.w3school.com.cn/i/bg_flower_2.gif);
+固定尺寸 background-size:63px 100px; 
+/*background-size:100% 30%; 按比例拉伸*/
+-moz-background-size:63px 100px; /* 老版本的 Firefox */
+background-repeat:no-repeat;
+padding-top:100px;
+}
+
+
+h1/*文本阴影  */
+{
+text-shadow: 5px 5px 5px #0000ff;/*水平阴影、垂直阴影、模糊距离  */
+}
+
+p.test/*段落自动换行  */
+{
+width:15em; 
+border:1px solid #000000;
+word-wrap:break-word;
+}
+
+
+/*动画改变背景色和位置：---------------  */
+@keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+/*动画改变背景色和位置：---------------  */
+
+
+.newspaper
+{/* 新闻的排版 */
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome 把  元素中的文本分隔为三列：*/  
+column-count:3;
+
+-moz-column-gap:30px; /* Firefox */
+-webkit-column-gap:10px; /* Safari and Chrome 规定列之间 10 像素的间隔：*/
+column-gap:30px;
+
+-moz-column-rule:4px outset #ff0000; /* Firefox */
+-webkit-column-rule:2px outset #ff0000; /* Safari and Chrome 规定列之间的宽度、样式和颜色规则：*/
+column-rule:4px outset #ff0000;
+}
+div#resizeboth
+{  /*resize 属性规定是否可由用户调整元素尺寸。  但在手机上无效 */
+border:2px solid;
+padding:10px 40px; 
+width:100px;
+resize:both;
+overflow:auto;
+}
+</style>
+</head>
+
+
+
+<body  bgcolor="gray"> 
+
+<div id="resizeboth">上面是缩小的背景图片。拉伸效果无效哎。。</div>
+<p>原始图片：<img src="http://www.w3school.com.cn/i/bg_flower.gif" alt="Flowers"></p>
+
+<div id="div1">动画</div>
+
+<p class="test">This paragraph 自动换行   contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<p class="newspaper">
+人民网北京2月24日电 (记者 刘阳)国家发展改革委近日发出通知，决定自2月25日零时起将汽、柴油价格每吨分别提高300元和290元，折算到90号汽油和0号柴油（全国平均）每升零售价格分别提高0.22元和0.25元。
+
+此次国内成品油价格调整幅度，是按照现行国内成品油价格形成机制，根据国际市场油价变化情况确定的。去年11月16日国内成品油价格调整以来，受市场预期欧美经济复苏前景向好以及中东局势持续动荡等因素影响，国际市场原油价格先抑后扬，2月上旬WTI和布伦特原油期货价格再次回升至每桶95美元和115美元以上。虽然近两日价格有所回落，但国内油价挂钩的国际市场三种原油连续22个工作日移动平均价格上涨幅度已超过4%，达到国内成品油价格调整的边界条件。
+
+通知指出，这次成品油调价后，国家将按照已建立的补贴机制，继续对种粮农民、渔业（含远洋渔业）、林业、城市公交、农村道路客运（含岛际和农村水路客运）等给予补贴。同时，为保证市场物价基本稳定，防止连锁涨价，对与居民生活密切相关的铁路客运、城市公交、农村道路客运（含岛际和农村水路客运）价格不作调整。
+
+通知要求，中石油、中石化、中海油三大公司要组织好成品油生产和调运，保持合理库存，加强综合协调和应急调度，保障成品油供应。各级价格主管部门要加大市场监督检查力度，依法查处不执行国家价格政策，以及囤积居奇、造谣惑众、合谋涨价、搭车涨价等违法行为，维护正常市场秩序。
+</p>
+
+
+
+<div >border-radius 属性允许您向元素添加圆角。</div>
+<br>
+<div id="round" >在这里，图片铺满整个边框。</div>
+<br>
+<div id="stretch">在这里，图片被拉伸以填充该区域。</div>
+<br>
+<p>这是我们使用的图片：</p>
+<img src="http://www.w3school.com.cn/i/border.png">
+
+<p><b>注释：</b> Internet Explorer 不支持 border-image 属性。</p>
+<p>border-image 属性规定了用作边框的图片。</p>
+
+<h1 align="center">居中heading 1</h1>
+
+<h4>两行三列：</h4>
+<table border="1" bgcolor="red">
+<tr>
+  <td bgcolor="yellow">100</td>
+  <td>200</td>
+  <td>300</td>
+</tr>
+<tr>
+  <td>400</td>
+  <td>500</td>
+  <td>600</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+document.write("<h1>Hello World!</h1>")
+</script> 
+
+<form name="input" action="http://www.w3school.com.cn/html/html_form_action.asp" method="get">
+<select name="cars">
+<option value="volvo">下拉</option>
+<option value="saab">1111</option>
+<option value="fiat">222</option>
+<option value="audi">333</option>
+</select>
+<br />
+Male: 
+<input type="radio" name="Sex" value="Male" checked="checked">
+<br />
+Female: 
+<input type="radio" name="Sex" value="Female">
+<br />
+<input type ="submit" value ="Submit">
+</form>
+
+<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="bottom"> 在文本中</p>
+
+<p>图像 <img src ="http://www.w3school.com.cn/i/eg_cute.gif" align="middle"> 在文本中</p>
+
+<p>图像 <img src ="http://www.w3school.com.cn/i/eg_cute.gif" align="top"> 在文本中</p>
+
+<p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+
+<p><a href="http://www.microsoft.com/" target="_blank">本文本</a> 是一个指向万维网上的页面的链接。</p>
+
+<div style="text-align:center;">
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">大</button>
+  <button onclick="makeNormal()">中</button>
+  <button onclick="makeSmall()">小</button>
+  <br /> 
+  <video id="video1" width="120" style="margin-top:15px;">
+    <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4" />
+    <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg" />
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script type="text/javascript">
+var myVideo=document.getElementById("video1");
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=320; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=120; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=220; 
+} 
+</script> 
+
+</body> 
+</html>
