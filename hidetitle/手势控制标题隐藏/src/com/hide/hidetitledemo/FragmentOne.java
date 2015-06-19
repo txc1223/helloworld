@@ -20,7 +20,7 @@ public class FragmentOne extends BaseFragment implements AnimatorListener {
     private boolean mIsTitleHide = false;
     private boolean mIsAnim = false;
     private float lastX = 0;
-    private float lastY = 0;
+    private float lastY = 0; 
 
     public FragmentOne() {
         super();
