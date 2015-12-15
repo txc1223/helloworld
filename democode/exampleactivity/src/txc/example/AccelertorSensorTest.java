@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class AccelertorSensorTest extends Activity {
-	//加速度传感器  活动
+	//加速度传感器  活动11
 	private TextView tv1;
 	private SensorManager manager;
 	// 传感器监听器
